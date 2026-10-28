@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Navis Asset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">
+                <img src="logo.png" alt="Navis Asset">
+                <span class="logo-text">Navis Asset</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Услуги</a>
+                <a href="price.html">Прайс</a>
+                <a href="reviews.html">Отзывы</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <div class="lang-select">
+                    <img src="flag.png" alt="Флаг России">
+                    <span>РУС</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <button class="btn btn-black">Начать</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="faq">
+        <div class="container">
+            <h1>Ответы на часто задаваемые вопросы</h1>
+            <div class="faq__item faq__item--active">
+                <div class="faq__question">
+                    <h3>Как это все работает?</h3>
+                    <span class="faq__toggle">−</span>
+                </div>
+                <div class="faq__answer">
+                    <p>Методы, которые мы используем для восстановления учетных записей наших клиентов, сильно различаются в зависимости от конкретного случая. В случае восстановления пароля мы проводим наших клиентов через извлечение резервной копии зашифрованного закрытого ключа и составление полного списка возможных вариантов паролей.</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3>Я должен ли вам сказать свой пароль полностью?</h3>
+                    <span class="faq__toggle">+</span>
+                </div>
+                <div class="faq__answer">
+                    <p>Нет, вы не обязаны сообщать нам свой полный пароль. Мы можем работать с частичной информацией.</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3>Сколько времени занимает восстановление кошелька?</h3>
+                    <span class="faq__toggle">+</span>
+                </div>
+                <div class="faq__answer">
+                    <p>Восстановление обычно занимает от 3 до 7 рабочих дней в зависимости от сложности случая.</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3>Как я могу вам довериться, вы не украдете мои деньги?</h3>
+                    <span class="faq__toggle">+</span>
+                </div>
+                <div class="faq__answer">
+                    <p>Мы работаем официально и прозрачно, наши клиенты получают отчет о проделанной работе.</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3>Какие виды криптовалютных кошельков вы восстанавливаете?</h3>
+                    <span class="faq__toggle">+</span>
+                </div>
+                <div class="faq__answer">
+                    <p>Мы восстанавливаем практически все типы кошельков, включая Bitcoin, Ethereum, Litecoin, Dogecoin и другие.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq__item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq__question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('faq__item--active');
+            });
+        });
+    </script>
+</body>
+</html>

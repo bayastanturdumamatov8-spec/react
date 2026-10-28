@@ -1,0 +1,648 @@
+/* ========================================= */
+/* 1. ОБЩИЕ СТИЛИ (для ноутбука) */
+/* ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lang-select {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.lang-select img {
+    height: 16px;
+    width: 24px;
+    border-radius: 2px;
+}
+
+.arrow {
+    font-size: 12px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-black {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Главный экран */
+.hero {
+    padding: 60px 0;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero__text h1 {
+    color: #1a1a1a;
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero__text p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-red {
+    background: linear-gradient(90deg, #FF4E00 0%, #FF8A00 100%);
+    color: #ffffff;
+}
+
+.btn-ghost {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+.hero__image {
+    width: 50%;
+}
+
+.hero__image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+}
+
+/* Партнеры */
+.partners {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.partners__logos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.partner-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #999999;
+}
+
+/* Преимущества */
+.advantages {
+    padding: 80px 0;
+}
+
+.advantages h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.advantages__grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.advantage-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.advantage-card__number {
+    font-size: 64px;
+    font-weight: bold;
+    color: #FF4E00;
+    margin-top: 20px;
+}
+
+.advantage-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.advantage-card p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Услуги */
+.services {
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services__grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 48%;
+    min-width: 300px;
+}
+
+.service-icon {
+    font-size: 30px;
+    color: #FF4E00;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fdece7;
+    border-radius: 50%;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666666;
+    font-size: 16px;
+}
+
+.service-card--red {
+    background: linear-gradient(90deg, #FF4E00 0%, #FF8A00 100%);
+    color: #ffffff;
+}
+
+.service-card--red p {
+    color: #ffffff;
+}
+
+.service-card--red .service-icon {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+/* FAQ */
+.faq {
+    padding: 80px 0;
+}
+
+.faq h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq__item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq__question h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq__toggle {
+    font-size: 24px;
+    color: #FF4E00;
+    border-radius: 50%;
+    background-color: #fdece7;
+    padding: 5px 10px;
+}
+
+.faq__answer {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq__answer p {
+    color: #666666;
+    font-size: 16px;
+}
+
+.faq__item--active .faq__answer {
+    display: block;
+}
+
+.faq__item--active .faq__toggle {
+    background-color: #fdece7;
+    color: #FF4E00;
+}
+
+/* Новости */
+.news {
+    padding: 80px 0;
+}
+
+.news h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.news__grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.news__main {
+    width: 40%;
+    min-width: 300px;
+}
+
+.news__main img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.news__main h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news__main p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.news__list {
+    width: 50%;
+    min-width: 300px;
+}
+
+.news__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.news__item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.news__item h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.news__item p {
+    color: #666666;
+    font-size: 12px;
+}
+
+/* Блок призыва */
+.cta {
+    padding: 80px 0;
+}
+
+.cta__inner {
+    background: linear-gradient(90deg, #FF4E00 0%, #FF8A00 100%);
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.cta__text h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #FF4E00;
+}
+
+.cta-bitcoin {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00C853 0%, #B2FF59 100%);
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+
+/* Футер */
+.footer {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+}
+
+.footer__left img {
+    height: 40px;
+}
+
+.footer__left p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.footer__left strong {
+    color: #FF4E00;
+    font-size: 16px;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__nav h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__socials img {
+    height: 40px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer__copyright {
+    color: #666666;
+    font-size: 14px;
+}
+
+.footer__made {
+    color: #666666;
+    font-size: 14px;
+}
+
+.heart {
+    color: #FF4E00;
+}
+
+.navis-dev {
+    color: #FF4E00;
+}
+
+
+@media (max-width: 768px) {
+    /* Шапка */
+    .header__inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .header__actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Первый экран */
+    .hero__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero__text h1 {
+        font-size: 28px;
+    }
+    .hero__text p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .hero__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    .hero__image {
+        width: 100%;
+    }
+
+    /* Партнеры */
+    .partners__logos {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .partner-text {
+        font-size: 18px;
+    }
+
+    /* Преимущества */
+    .advantages__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantage-card {
+        width: 100%;
+    }
+    .advantages h2 {
+        font-size: 24px;
+    }
+
+    /* Услуги */
+    .services__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card {
+        width: 100%;
+    }
+    .services h2 {
+        font-size: 24px;
+    }
+
+    /* FAQ */
+    .faq h2 {
+        font-size: 24px;
+    }
+    .faq__question h3 {
+        font-size: 16px;
+    }
+
+    /* Новости */
+    .news__grid {
+        flex-direction: column;
+    }
+    .news__main,
+    .news__list {
+        width: 100%;
+    }
+    .news__item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Блок призыва */
+    .cta__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cta__text h2 {
+        font-size: 22px;
+    }
+
+    /* Футер */
+    .footer__inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer__socials {
+        justify-content: center;
+    }
+    .footer__bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
